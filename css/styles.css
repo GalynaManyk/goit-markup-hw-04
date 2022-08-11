@@ -38,38 +38,28 @@ img {
   height: auto;
 }
 
-/*  основний колір background: #ffffff
- допоміжний background:#2F303A 
-колір акцента background: #2196F3*/
-
 .list {
   list-style: none;
 }
-
 .link {
   text-decoration: none;
   display: block;
 }
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-/*------- шапка---------*/
 .conteiner {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
-
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
   display: flex;
 }
-
 .header-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -81,7 +71,6 @@ img {
   padding-bottom: 25px;
   margin-right: 93px;
 }
-
 .header-logo-span {
   font-weight: 700;
   font-size: 26px;
@@ -89,21 +78,17 @@ img {
   letter-spacing: 0.03em;
   color: #000000;
 }
-
 .header .conteiner {
   display: flex;
   align-items: center;
 }
-
 .header-nav {
   display: flex;
 }
-
 .header-list {
   display: flex;
   column-gap: 50px;
 }
-
 .header-link {
   display: block;
   font-weight: 500;
@@ -125,7 +110,10 @@ img {
 .header-list-info {
   display: flex;
   margin-left: auto;
+  align-items: center;
+ 
 }
+.header-item-info{margin-right: 30px;}
 
 .header-item-info .header-mail {
   display: flex;
@@ -134,28 +122,25 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
-  margin-right: 30px;
+  align-items: center;
 }
 .header-mail:hover,
 .header-mail:focus {
   color: var(--main-btn);
 }
 
-
-.convert-link {
-  gap: 10px;
-}
-
+.icon-link {column-gap: 10px;
+display: flex;}
+  
 .header-icon:hover,
 .header-icon:focus {
   fill: var(--main-btn);
 }
 
 .header-icon {
- 
-  fill: var(--second-title-color);
+  fill: currentColor;
+  align-items: center;
 }
-
 .header-tel {
   font-weight: 500;
   font-size: 14px;
@@ -168,7 +153,6 @@ img {
   color: var(--main-btn);
 }
 
-/*------------герой------------*/
 .hero {
   padding: 200px 0;
   background-color: #c4c4c4;
@@ -227,11 +211,10 @@ img {
   margin: 0 auto;
 }
 
-/*------------переваги--------*/
-
 .features-icon {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 30px;
   margin-bottom: 30px;
 }
@@ -243,10 +226,15 @@ img {
   border-radius: 4px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.features-icon1 {
+
+.features-icon1 { display: flex;
+  justify-content: center;
+  align-items: center;
   fill: var(--second-title-color);
 }
+
 .features-icon1:hover,
 .features-icon1:focus {
   fill: var(--main-btn);
@@ -280,7 +268,6 @@ img {
   max-width: 270px;
 }
 
-/*--------------чим ми займаємось------*/
 .about {
   padding-top: 0px;
 }
@@ -300,8 +287,6 @@ img {
   margin-bottom: 0px;
   text-align: center;
 }
-
-/*---------------------команда--------------*/
 
 .team-section {
   background-color: #f5f4fa;
@@ -361,11 +346,17 @@ img {
 .comand-soc {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
-.comand-soc-icon {
+.comand-soc-icon {display: flex;
+  justify-content: center;
+  align-items: center;
   fill: var(--main-color-icon);
 }
+.comand-social-item{display: flex;
+justify-content: center;
+align-items: center;}
 
 .comand-soc-link {
   width: 44px;
@@ -373,6 +364,7 @@ img {
   border-radius: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .comand-soc-link:hover,
@@ -385,14 +377,16 @@ img {
   fill: var(--main-color);
 }
 
-/* ----  клієнти  ----- */
-
 .clients-icon {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 30px;
   margin-top: 50px;
 }
+.clients-item {display: flex;
+justify-content: center;
+align-items: center;}
 
 .clients-icon1 {
   fill: var(--main-color-icon);
@@ -416,6 +410,7 @@ img {
   border-radius: 4px;
   display: flex;
   align-items: center;
+  justify-content: center;
   fill: #afb1bb;
 }
 
@@ -428,9 +423,6 @@ img {
   color: var(--main-title-color);
 }
 
-/*-------------------портфоліо--------------*/
-
-/*   ----------filtr-button--portfolio----*/
 
 .filtr-list {
   display: flex;
@@ -463,8 +455,6 @@ img {
 }
 .filtr-item:hover,
 .filtr-item:focus {box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);border-radius: 4px;}
-
-/*----------progect--portfolio--------*/
 
 .visually-hidden {
   position: absolute;
@@ -522,7 +512,6 @@ img {
   padding-top: 0px;
 }
 
-/*------------------------підвал----------*/
 .footer {
   background: #2f303a;
   padding-top: 60px;
@@ -614,7 +603,6 @@ img {
 .footer-tel:focus {
   color: var(--main-btn);
 }
-/*--------футер сщціальні мережі -----*/
 
 .footer-soc-title {
   font-weight: 700;
@@ -641,8 +629,12 @@ img {
 .footer-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
+.footer-social-item {display: flex;
+  justify-content: center;
+  align-items: center;}
 
 .footer-soc-link {
   width: 44px;
@@ -650,10 +642,14 @@ img {
   border-radius: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-soc-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   fill: var(--main-color);
 }
 .footer-soc-link:hover,
